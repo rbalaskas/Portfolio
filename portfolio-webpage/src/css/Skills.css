@@ -1,0 +1,118 @@
+/* Skills.css */
+
+.skills {
+  margin-top: 5%;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-in-out; /* Smooth transition */
+}
+
+.fade-in{
+  opacity: 1;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -10px;
+}
+
+.column {
+  flex: 1;
+  margin: 10px;
+  max-width: 400px; /* Adjust based on your layout preference */
+}
+
+.category-header {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  color: #19747E;
+  font-weight: bold;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  background-color: #282828; /* Background color for each skill */
+  padding: 10px 15px;
+  margin: 5px;
+  color: white; /* Adjust text color for better readability */
+  border-radius: 15px;
+  white-space: nowrap; /* Prevent text from wrapping inside each skill box */
+}
+
+.technical, .soft, .tools {
+  background-color: #E2E2E2;
+  color: black;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.technical:hover, .soft:hover, .tools:hover {
+  box-shadow: 0 0 20px #19747E;
+}
+
+
+.unique-header {
+  display: flex;
+  justify-content: center; /* Horizontally center the text */
+  align-items: center; /* Vertically center the text */
+  text-align: center;
+  font-size: 36px;
+  color: #000000;
+  text-shadow: 0 0 3px #19747E, 0 0 6px #19747E, 0 0 10px #19747E;
+}
+
+/* For screens smaller than 767px */
+@media (max-width: 767px) {
+
+  .skills {
+    margin-top: 15%;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease-in-out; /* Smooth transition */
+  }
+
+  .fade-in{
+    opacity: 1;
+  }
+  .row {
+    display: flex;
+    flex-direction: column; /* Stack columns on top of each other */
+    justify-content: center; /* Center columns horizontally */
+    align-items: center; /* Center columns vertically */
+  }
+
+  .column {
+    width: 80%; /* Occupy 80% width of the container */
+    height: auto; /* Set height to auto */
+    margin-bottom: 30px; /* Add some spacing between columns */
+    display: flex; /* Change to flex layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+  }
+
+  .unique-header {
+    display: flex;
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    text-align: center;
+    font-size: 36px;
+    color: #000000;
+    text-shadow: 0 0 3px #19747E, 0 0 6px #19747E, 0 0 10px #19747E;
+    margin: 0 auto; /* Center horizontally */
+    max-width: 80%; /* Adjust width as needed */
+    margin-bottom: 1rem;
+}
+}

@@ -1,0 +1,141 @@
+/* Navbar.css */
+.navbar {
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:7rem;
+    margin:0;
+    padding:0;
+  }
+  
+  
+  .navbar .left {
+    margin-top:20px;
+    flex: 1;
+    margin-left: 40px;
+  }
+  
+  .navbar .left a{
+   font-size: 25px;
+   text-shadow: 0 0 4px #000000, 0 0 7px #ffffff;
+  }
+
+  .navbar .middle a {
+    margin-top:20px;
+    flex: 1;
+    display: flex; 
+    justify-content: center;
+    text-decoration: none; 
+    color: black;
+    font-weight: bold;
+    background-image: conic-gradient(
+    #D1E8E2 0%, #D1E8E2 33%, #19747E 33%, #19747E 66%, #A9D6E5 66%, #A9D6E5 99%
+    );
+    padding:15px;
+    font-size: 27px;
+  }
+
+  .navbar .middle a:hover{
+  background-image: conic-gradient(
+    #A9D6E5 0%, #A9D6E5 33%, #D1E8E2 33%, #D1E8E2 66%, #19747E 66%, #19747E 99%
+    );
+  }
+  
+  .navbar .right {
+    flex: 1;
+    text-align: right;
+    margin-right: 40px;
+    margin-top:20px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .navbar ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .navbar ul li a:hover {
+    color: #ccc;
+  }
+  
+
+  .button-50 {
+    text-shadow: 0 0 4px #000000, 0 0 7px #ffffff;
+    appearance: button;
+    background-color: #000000;
+    background-image: none;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-shadow: #000000 4px 4px 0 0,#000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .button-50:focus {
+    text-decoration: none;
+  }
+  
+  .button-50:hover {
+    text-decoration: none;
+  }
+  
+  .button-50:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+  }
+  
+  .button-50:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+  }
+  
+  
+/* For mobile */
+/* For screens up to 768px width */
+@media (max-width: 767px) {
+  .left {
+    display: none;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .navbar {
+    display: flex; /* Add display flex to the navbar */
+    justify-content: center; /* Center align items horizontally */
+  }
+
+}
